@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Do Corte Barber | Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte moderna do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho com a nova foto de perfil atualizada -->
+        <div class="header-profile">
+            <img src="img/jean.jpeg" alt="Logo Jean Do Corte Barbe" class="profile-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=150&h=150&fit=crop';">
+            <div class="header-titles">
+                <h1>Jean Do Corte<br>Barbe &#x1F488;</h1>
+                <span>BARBER SHOP</span>
+            </div>
+        </div>
+
+        <!-- Seção Sobre Reduzida -->
+        <div class="about-section">
+            <p>
+                Tradição e excelência em cortes clássicos e modernos desde 2016. 
+                Venha renovar o seu visual com atendimento de primeira!
+            </p>
+        </div>
+
+        <!-- Seção de Carrossel de Fotos -->
+        <div class="carousel-container">
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=300&h=300&fit=crop" alt="Corte 1"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=300&h=300&fit=crop" alt="Corte 2"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=300&h=300&fit=crop" alt="Corte 3"></div>
+            <div class="carousel-item"><img src="img/corte-de-cabelo-masculino-2025-imagem-barbeiro-dicas-diarias.jpg" alt="Corte 4"></div>
+            <div class="carousel-item"><img src="" alt="Corte 4"></div>
+        </div>
+
+        <!-- Seção Estilos e Serviços (Sem preços) -->
+        <div class="services-box">
+            <h3>&#x1F488; Estilos e Serviços</h3>
+            
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x26A1; Degradê (Fade)</div>
+                    <div class="service-desc">Transição lateral perfeita (Low, Mid ou High Fade).</div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x1F396;&#xFE0F; Corte Militar</div>
+                    <div class="service-desc">Prático, alinhado e com visual tradicional.</div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x1F4BC; Corte Social / Executivo</div>
+                    <div class="service-desc">Clássico, elegante e ideal para o dia a dia.</div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x1F9D4; Barba Completa</div>
+                    <div class="service-desc">Modelagem, toalha quente e acabamento na navalha.</div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x1F525; Combo (Corte + Barba)</div>
+                    <div class="service-desc">O pacote completo para renovar o visual.</div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <div class="service-name">&#x2702;&#xFE0F; Outros Cortes</div>
+                    <div class="service-desc">Outros estilos e acabamentos.</div>
+                    <a href="https://wa.me/5581989449171?text=Ol%C3%A1!%20Gostaria%20de%20ver%20outros%20cortes%20com%20o%20barbeiro." target="_blank" style="display: inline-block; margin-top: 4px; font-size: 11px; color: #D4AF37; text-decoration: none; font-weight: 600;">&#x1F4AC; Consultar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="links-list">
+            <!-- 1. Agendamento via JS -->
+            <button class="btn btn-primary" onclick="abrirModal()">
+                &#x1F4C5; AGENDAR MEU HORÁRIO ONLINE
+            </button>
+
+            <!-- 2. WhatsApp Direto -->
+            <a href="https://wa.me/5581989449171?text=Ol%C3%A1!%20D%C3%BAvida%20sobre%20os%20servi%C3%A7os." class="btn" target="_blank">
+                &#x1F4AC; CHAMAR NO WHATSAPP
+            </a>
+
+            <!-- 3. Seguir no Instagram -->
+            <a href="https://www.instagram.com/jeandcorte?utm_source=qr&stkn=enlzOHBuaXA3dDY4" class="btn" target="_blank">
+                &#x1F4F7; SEGUIR NO INSTAGRAM
+            </a>
+
+            <!-- 4. Google Maps -->
+            <a href="https://www.google.com/maps/search/?api=1&query=R.+Maria+Auxiliadora+-+Vila+Rica,+Jaboatão+dos+Guararapes+-+PE,+54100-670" class="btn" target="_blank">
+                &#x1F4CD; COMO CHEGAR (GOOGLE MAPS)
+            </a>
+
+            <!-- 5. Avaliações com o link personalizado -->
+            <a href="https://maps.app.goo.gl/qUjTM3ZpfXzEv8dY6" class="btn" target="_blank">
+                &#x2B50; VER AVALIAÇÕES DE CLIENTES
+            </a>
+        </div>
+
+        <!-- Rodapé com Endereço Completo -->
+        <div class="footer-info">
+            <strong>Endereço:</strong><br>
+            R. Maria Auxiliadora - Vila Rica<br>
+            Jaboatão dos Guararapes - PE, 54100-670<br><br>
+            <strong>Horário de Funcionamento:</strong><br>
+            Segunda a Sábado: 09h às 20h<br>
+            <em>Aceitamos Cartões, PIX e Dinheiro</em>
+        </div>
+    </div>
+
+    <!-- Modal de Agendamento -->
+    <div id="modalAgendamento" class="modal">
+        <div class="modal-content">
+            <h3>Agendar no Jean Do Corte Barbe</h3>
+            <div class="form-group">
+                <label for="nomeCliente">Seu Nome:</label>
+                <input type="text" id="nomeCliente" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="servicoEscolhido">Escolha o Serviço:</label>
+                <select id="servicoEscolhido">
+                    <option value="Degradê (Fade)">Degradê (Fade)</option>
+                    <option value="Corte Militar">Corte Militar</option>
+                    <option value="Corte Social / Executivo">Corte Social / Executivo</option>
+                    <option value="Barba Completa">Barba Completa</option>
+                    <option value="Combo (Corte + Barba)">Combo (Corte + Barba)</option>
+                    <option value="Outros Cortes">Outros Cortes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dataDesejada">Data:</label>
+                <input type="date" id="dataDesejada">
+            </div>
+            <div class="form-group">
+                <label for="horaDesejada">Horário:</label>
+                <select id="horaDesejada">
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-close" onclick="fecharModal()">Cancelar</button>
+                <button class="btn-submit" onclick="enviarAgendamento()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
